@@ -1,0 +1,137 @@
+man "commandName" --> to see all the options of command
+
+--------------------------------------------------------------------------------------------------------------------
+
+cd --> change directory
+cd "" --> if directory have space b/w it's name
+cd / --> /[root] go to root directory
+
+--------------------------------------------------------------------------------------------------------------------
+
+ls --> list of directories
+ls -R --> list of directories with the directories and files inside it
+ls -a --> list of directories included hidden files
+
+--------------------------------------------------------------------------------------------------------------------
+
+pwd --> print working directorys
+
+--------------------------------------------------------------------------------------------------------------------
+
+mkdir --> make directory
+
+--------------------------------------------------------------------------------------------------------------------
+
+touch --> make blank file
+touch ."fileName" --> create new hidden file
+
+--------------------------------------------------------------------------------------------------------------------
+
+mv --> move file [mv fileName/source destination]
+cp --> copy file [cp fileName/source destination]
+
+--------------------------------------------------------------------------------------------------------------------
+
+sudo."command" --> for accessing all the directories of another user also
+
+--------------------------------------------------------------------------------------------------------------------
+
+history --> display all the commands used
+
+--------------------------------------------------------------------------------------------------------------------
+
+echo/printf --> to print on terminal
+
+--------------------------------------------------------------------------------------------------------------------
+kill "PId" --> to kill the program
+
+--------------------------------------------------------------------------------------------------------------------
+
+rmdir "fileName" --> delete the empty directory
+rm --> delete files
+rm -r --> delete directories and files
+
+--------------------------------------------------------------------------------------------------------------------
+
+cat >"fileName" --> create a file and we can write in it, old is remove
+Ctrl + D --> to exit the writing mode
+cat "fileName" --> to display the data of file on terminal
+cat -n "fileName" --> display data with line numbers including blank line
+cat -b "fileName" --> display data with line numbers excluding blank line
+cat file1.txt >> file2.txt --> copy file1 data to file2
+cat file1.txt file2.txt >> file0.txt --> create file0 and copy file1, file2 data to file0
+cat >>file.txt --> [append] write in file without deleting old data
+
+--------------------------------------------------------------------------------------------------------------------
+
+df --> give the information about space 
+df -h --> give readable informatin about space
+
+--------------------------------------------------------------------------------------------------------------------
+
+du[disk usage] --> space use by the directories/files
+du -h --> make human readable
+
+--------------------------------------------------------------------------------------------------------------------
+
+date "+%d/%m/%y" --> display date
+date "+%H:%M:%S" --> display time
+date "+%Y" --> display year
+date "+%B" --> display month
+date "+%A" --> display day
+date -r "file/directoryName" --> display last modified date
+date -d "tommorow/1 year ago" --> display based on command
+
+--------------------------------------------------------------------------------------------------------------------
+
+who --> display all the number of user logged on system
+who -b --> display last boot time
+who -q --> display total numbers of user on system
+who -d --> diplay dead processes of system
+whoami --> display name of currently logged user
+
+--------------------------------------------------------------------------------------------------------------------
+
+sort --> sort the contents of a file in assending order and print
+sort -r --> sort the contents of a file in decending order and print
+sort -n --> sort the number in right order and alphabet also
+
+--------------------------------------------------------------------------------------------------------------------
+
+head --> display first 10 lines of file
+head -n3 --> display first 3 lines of file
+tail --> display last 10 lines of file
+
+--------------------------------------------------------------------------------------------------------------------
+
+wc --> display number of lines, words, characters
+wc -l, -w, -c --> lines, words, characters
+
+--------------------------------------------------------------------------------------------------------------------
+
+banner --> to print the ASCII character string in large letter
+
+--------------------------------------------------------------------------------------------------------------------
+
+file --> determine the type of a file
+
+--------------------------------------------------------------------------------------------------------------------
+
+cut -b 1,3,6-9 "fileName" --> cut the text from file and display
+
+--------------------------------------------------------------------------------------------------------------------
+
+grep "searchWord" --> used for searching and manipulating text patterns sensetively within files
+grep -i "searchWord" --> used for searching and manipulating text patterns insensetively within files
+grep -v "searchword" --> display all the lines which have don't have searchword
+grep -c "searchword" --> display number of lines have searchword
+
+--------------------------------------------------------------------------------------------------------------------
+
+ls -i --> display inode number of files
+df -i --> display inode information of files
+stat "fileName" --> display file statistics
+
+--------------------------------------------------------------------------------------------------------------------
+
+ls >io.txt --> create io.txt and store ls content in it
